@@ -1,7 +1,8 @@
 # Snipp
 An application that leverages ChatGPT to help you stay informed about your favorite news!
 
-<img width="497" alt="Screenshot 2023-02-06 at 8 28 36 PM" src="https://user-images.githubusercontent.com/110851085/217148742-2ec7ff89-5bdd-4c79-a155-22bb048fa2e6.png">
+<img width="497" alt="Screenshot 2023-02-06 at 8 28 36 PM" src="https://user-images.githubusercontent.com/110851085/217148742-2ec7ff89-5bdd-4c79-a155-22bb048fa2e6.png">![Screenshot 2023-02-06 at 10 25 36 PM](https://user-images.githubusercontent.com/110851085/217165306-56e5aef8-f166-4cc3-98f9-3dd38e27afff.jpeg)
+
 
 ## Overview
 
