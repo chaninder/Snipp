@@ -1,2 +1,2 @@
 # Snipp
-Snipp will text you updates on whatever topic/trend/idea you want, once a day.
+An application that leverages ChatGPT to help you stay informed about your favorite news!
