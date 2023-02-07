@@ -16,10 +16,10 @@ Snipp will text you a concise, easy-to-read summary (aka a Snippet) of the trend
 
 ### Messaging Options
 
-• SMS
+- SMS
   - Twilio (preferred)
   - Textbelt API
-  - Slack
+- Slack
 
 ### Deployment via Google Cloud
 
