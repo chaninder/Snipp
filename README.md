@@ -15,6 +15,12 @@ Snipp will text you a concise, easy-to-read summary (aka a Snippet) of the trend
 ## How to Run this Project
 
 
+### Authentication
+
+Running this will require an OpenAI account and a 
+• Access Token
+• Slack web client access token
+
 ### Messaging Options
 
 - SMS
@@ -25,5 +31,8 @@ Snipp will text you a concise, easy-to-read summary (aka a Snippet) of the trend
 ### Deployment via Google Cloud
 
 ### Alternatives to GPT-3
+
+
+
 
 inclyde autehtnitcation secirty stuff
