@@ -11,7 +11,7 @@ Snipp will text you a concise, easy-to-read summary (aka a snippet) of the trend
 
 ## Project Description
 
-In short, this program takes in your desired topic and makes a search to the Google News API. It then collects the top few articles and analyzes the headlines to see which article has the most interesting/general/broader scope content. We then generate a concise, easy-to-read summary using GPT-3 and then format this information nicely into a text.
+In short, this program takes in your desired topic and makes a search to the Google News API. It then collects the top few articles and analyzes the headlines to see which article has the most interesting/general/broader scope content. We then generate a concise, easy-to-read summary (~70 words) using GPT-3 and then format this information nicely into a text.
 
 ## How to Run this Project
 
