@@ -39,7 +39,7 @@ I've incorporated a variety of options for sending and recieving daily Snipps, e
 - Email via Python
 - Slack
 
-### Deployment/hosting via Google Cloud
+### Deployment via Google Cloud
 
 In order to automate the process to text me a Snipp once a day, I utilized Google Cloud VM's and crontabs. Here's an amazing tutorial on how to host your personalized script on the Cloud: https://www.youtube.com/watch?v=5OL7fu2R4M8. It will walk you through all the setup an shell-scripting needed to launch the bot.
 
@@ -47,20 +47,20 @@ NOTE: When you create an instance, you can choose a small machine. I personally 
 
 ### Alternatives to GPT-3
 
-In case you don't want to pay for OpenAI tokens, I've included an alternative free summarization method using the HuggingFace BART model. While testing it out, I realized GPT-3 does a better job of putting content into a concise, readable format, but BART also works great!
+In case you don't want to pay for OpenAI tokens, I've included an alternative free summarization method that uses the HuggingFace BART model (look in messaging_options.py). Note that GPT-3 does a better job of putting content into a concise, readable format. However, BART also works great!
 
 ### Challenges
 
 1. Paywalls
 
-Some article are inaccessible while scraping because they are blocked by a paywall. In order to work around this, I implemented a parsing check in my code to detect paywalls and other inaccessible articles. If a paywall is found, we simply continue scraping the next article.
+Some articles are inaccessible while scraping because they are blocked by a paywall. In order to work around this, I implemented a parsing check in my code to detect paywalls and other inaccessible articles. If a paywall is found, we simply continue scraping the next article.
 
 2. Determining relevant news/headlines
 
-Some articles I came across had headlines that were too specific. For example, when my input topic was "Doordash", I got articles with headlines such as "DoorDash Driver Confronts Customer At Ring Camera Because Of Their $8 Tip". This isn't what I'm interested in, however. I want to know updates about DoorDash in terms of business - something more broad and general in scope. The solution here was to ask GPT-3 to do exactly this. Other models didn't end up performing as well on this task.
+Some articles I came across contained headlines that were too specific. For example, when my input topic was "Doordash", I got articles with headlines such as "DoorDash Driver Confronts Customer At Ring Camera Because Of Their $8 Tip". This isn't what I'm interested in, however. I want updates about DoorDash in terms of business - something more broad and general in scope. The solution here was to ask GPT-3 to do exactly this. Other models didn't end up performing as well on this specific task.
 
 ### A Sample Snipp
 
-I am personally interested in the rapid grocery delivery industry, so here is the Snipp my program generated.
+I am personally interested in the rapid grocery delivery industry, so here is the Snipp my program generated when I gave it this topic.
 
 ![Screenshot 2023-02-06 at 10 25 36 PM](https://user-images.githubusercontent.com/110851085/217165306-56e5aef8-f166-4cc3-98f9-3dd38e27afff.jpeg)
