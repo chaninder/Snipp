@@ -31,7 +31,7 @@ Here are the keys and tokens you will need throughout the project:
 
 ### Messaging Options
 
-I've incorporated a variety of options for sending and recieving daily Snipps, each of which have their own pros and cons. The preferred method is to directly access the Twilio API.
+I've incorporated a variety of options for sending and recieving daily Snipps, each of which have their pros and cons. The preferred method is to directly access the Twilio API.
 
 - SMS
   - Twilio (preferred)
