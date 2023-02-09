@@ -39,10 +39,25 @@ I've incorporated a variety of options for sending and recieving daily Snipps, e
 - Email via Python
 - Slack
 
-### Deployment via Google Cloud
+### Deployment/hosting via Google Cloud
+
+In order to automate the process to text me a Snipp once a day, I utilized Google Cloud VM's and crontabs. Here's an amazing tutorial on how to host your personalized script on the Cloud: https://www.youtube.com/watch?v=5OL7fu2R4M8. It will walk you through all the setup an shell-scripting needed to launch the bot.
+
+NOTE: When you create an instance, you can choose a small machine. I personally went with e2-micro and it works perfectly fine!
 
 ### Alternatives to GPT-3
 
+In case you don't want to pay for OpenAI tokens, I've included an alternative free summarization method using the HuggingFace BART model. While testing it out, I realized GPT-3 does a better job of putting content into a concise, readable format, but BART also works great!
+
+### Challenges
+
+1. Paywalls
+
+Some article are inaccessible while scraping because they are blocked by a paywall. In order to work around this, I implemented a parsing check in my code to detect paywalls and other inaccessible articles. If a paywall is found, we simply continue scraping the next article.
+
+2. Determining relevant news/headlines
+
+Some articles I came across had headlines that were too specific. For example, when my input topic was "Doordash", I got articles with headlines such as "DoorDash Driver Confronts Customer At Ring Camera Because Of Their $8 Tip". This isn't what I'm interested in, however. I want to know updates about DoorDash in terms of business - something more broad and general in scope. The solution here was to ask GPT-3 to do exactly this. Other models didn't end up performing as well on this task.
 
 ### A Sample Snipp
 
