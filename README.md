@@ -42,3 +42,10 @@ I've incorporated a variety of options for sending and recieving daily Snipps, e
 ### Deployment via Google Cloud
 
 ### Alternatives to GPT-3
+
+
+### A Sample Snipp
+
+I am personally interested in the rapid grocery delivery industry, so here is the Snipp my program generated.
+
+![Screenshot 2023-02-06 at 10 25 36 PM](https://user-images.githubusercontent.com/110851085/217165306-56e5aef8-f166-4cc3-98f9-3dd38e27afff.jpeg)
