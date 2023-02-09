@@ -1,0 +1,11 @@
+newspaper3k
+twilio
+openai
+transformers
+pyshorteners
+secure-smtplib
+slackclient
+requests
+beautifulsoup
+nltk
+torch
