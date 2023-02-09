@@ -119,11 +119,7 @@ def send_text_twilio(recieve_number, text_to_send):
     )
 
 # Putting everything together
-def send_snipp(topic, receiving_number, method):
-
-  if method not in ['Twilio', 'Textbelt', 'Slack']:
-    print('Invalid texting method. Please enter one of the following options: Twilio, Textbelt, Slack')
-    return 
+def send_snipp(topic, receiving_number):
 
   snipp, link = generate_snipp(topic)
   shortened_url = shorten_url(link)
@@ -132,21 +128,13 @@ def send_snipp(topic, receiving_number, method):
   snipp_message = f'Here is your daily {topic} Snipp:\n\n{snipp}\n\nDive deeper here: {shortened_url} \n\nSnipp'
 
   # Send text
-  if method == 'Twilio':
-    send_text_twilio(receiving_number, snipp_message)
-  elif method == 'Textbelt':
-    send_text_textbelt(receiving_number, snipp_message)
-  elif method == 'Slack':
-    print('Sending via Slack')
-    send_slack_message(snipp_message)
-    return snipp_message
+  send_text_twilio(receiving_number, snipp_message)
 
-  print('\nSnipp successfully sent :)')
-  print()
-  print(snipp_message)
+  # print('\nSnipp successfully sent :)')
+  # print()
+  # print(snipp_message)
   return
 
 # HERE IS YOUR MAIN CODE
 topic = "YOUR_TOPIC_OF_CHOICE"
-send_snipp(topic, "YOUR_NUMBER", 'Twilio')
-
+send_snipp(topic, "YOUR_NUMBER")
