@@ -1,5 +1,5 @@
 # Snipp
-An application that leverages ChatGPT to help you stay informed about your favorite news!
+Snipp is a bot that leverages GPT to help you stay informed about your favorite news topics by texting you daily, concise summarized updates.
 
 <img width="497" alt="Screenshot 2023-02-06 at 8 28 36 PM" src="https://user-images.githubusercontent.com/110851085/217148742-2ec7ff89-5bdd-4c79-a155-22bb048fa2e6.png">
 
